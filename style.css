@@ -12,7 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #d9a6a6;
+    background: linear-gradient(135deg, #ffd6e8 0%, #ffe8b5 40%, #fbe4ff 100%);
+    color: #4d2a2a;
   }
   
   .container {
@@ -23,10 +24,25 @@
     gap: 20px;
     max-width: 500px;
     margin: 20px;
+    background: rgba(255, 255, 255, 0.45);
+    padding: 28px 22px;
+    border-radius: 28px;
+    box-shadow: 0 18px 45px rgba(184, 80, 110, 0.18);
+    backdrop-filter: blur(4px);
   }
   
   .container .tenor-gif-embed {
-    max-width: 200px;
+    max-width: 220px;
+  }
+  
+  .container h1 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    line-height: 1.2;
+  }
+
+  .container p {
+    font-size: 1.05rem;
+    line-height: 1.6;
   }
   
   .container .btn {
@@ -34,17 +50,24 @@
     gap: 25px;
     position: relative;
     z-index: 1;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .btn a {
     text-decoration: none;
-    color: #111;
-    background: #fff;
-    padding: 10px 25px;
-    border-radius: 66px;
-    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
-    transition: all 0.15s ease;
+    color: #4d2a2a;
+    background: linear-gradient(135deg, #ffffff, #ffe7f1);
+    padding: 12px 26px;
+    border-radius: 999px;
+    box-shadow: 0.5rem 1rem 2.2rem rgba(163, 84, 120, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     user-select: none;
+    font-weight: 600;
+  }
+
+  .btn a:hover {
+    transform: translateY(-2px) scale(1.02);
   }
 
   #move-random {
